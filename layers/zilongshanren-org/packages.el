@@ -254,7 +254,7 @@ unwanted space when exporting org-mode to html."
               ("s" "Code Snippet" entry
                (file org-agenda-file-code-snippet)
                "* %?\t%^g\n#+BEGIN_SRC %^{language}\n\n#+END_SRC")
-              ("w" "work" entry (file+headline org-agenda-file-gtd "Cocos2D-X")
+              ("w" "work" entry (file+headline org-agenda-file-gtd "Gorilla")
                "* TODO [#A] %?\n  %i\n %U"
                :empty-lines 1)
               ("c" "Chrome" entry (file+headline org-agenda-file-note "Quick notes")
@@ -269,15 +269,15 @@ unwanted space when exporting org-mode to html."
                :empty-lines 1)))
 
       ;;An entry without a cookie is treated just like priority ' B '.
-      ;;So when create new task, they are default 重要且紧急
+      ;;So when create new task, they are default 重要且緊急
       (setq org-agenda-custom-commands
             '(
-              ("w" . "任务安排")
-              ("wa" "重要且紧急的任务" tags-todo "+PRIORITY=\"A\"")
-              ("wb" "重要且不紧急的任务" tags-todo "-Weekly-Monthly-Daily+PRIORITY=\"B\"")
-              ("wc" "不重要且紧急的任务" tags-todo "+PRIORITY=\"C\"")
+              ("w" . "任務安排")
+              ("wa" "重要且緊急的任務" tags-todo "+PRIORITY=\"A\"")
+              ("wb" "重要且不緊急的任務" tags-todo "-Weekly-Monthly-Daily+PRIORITY=\"B\"")
+              ("wc" "不重要且緊急的任務" tags-todo "+PRIORITY=\"C\"")
               ("b" "Blog" tags-todo "BLOG")
-              ("p" . "项目安排")
+              ("p" . "項目安排")
               ("pw" tags-todo "PROJECT+WORK+CATEGORY=\"cocos2d-x\"")
               ("pl" tags-todo "PROJECT+DREAM+CATEGORY=\"zilongshanren\"")
               ("W" "Weekly Review"
