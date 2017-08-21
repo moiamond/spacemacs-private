@@ -610,8 +610,8 @@ Error out if this isn't a GitHub repo."
   (call-process "terminal-notifier"
     nil 0 nil
     "-group" "Emacs"
+    "-sound" "default"
     "-title" title
     "-sender" "org.gnu.Emacs"
     "-message" message
     "-activate" "oeg.gnu.Emacs"))
-    
